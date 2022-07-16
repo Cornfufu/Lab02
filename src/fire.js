@@ -2,11 +2,12 @@
 //import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore";
+import firebase from 'firebase';
+//import 'firebase/compat/auth';
+//import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyD84p_8YuaKdhbliJLzZNGGZjvlgY6kfwc",
   authDomain: "login-c16c3.firebaseapp.com",
   projectId: "login-c16c3",
@@ -16,4 +17,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const fire = firebase.initializeApp(firebaseConfig);
+export default fire ;
